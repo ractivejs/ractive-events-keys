@@ -1,0 +1,12 @@
+{
+	"name": "ractive-events-keys",
+	"version": "0.1.0",
+	"author": "Rich Harris",
+	"main": "Ractive-events-keys.js",
+	"ignore": [
+		"**/.*",
+		"src",
+		"test",
+		"Gruntfile.js"
+	]
+}
