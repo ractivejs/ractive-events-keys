@@ -3,7 +3,7 @@ Ractive.js keys event plugin
 
 *Find more Ractive.js plugins at [ractivejs.org/plugins](http://ractivejs.org/plugins)*
 
-[See the demo here.](TODO)
+[See the demo here.](http://ractivejs.github.io/Ractive-events-keys/)
 
 Usage
 -----
