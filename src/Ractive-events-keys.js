@@ -11,7 +11,7 @@
 
 	Troubleshooting: If you're using a module system in your app (AMD or
 	something more nodey) then you may need to change the paths below,
-	where it says `require( 'ractive' )` or `define([ 'Ractive' ]...)`.
+	where it says `require( 'Ractive' )` or `define([ 'Ractive' ]...)`.
 
 	==========================
 
@@ -36,7 +36,7 @@
 
 	// Common JS (i.e. browserify) environment
 	if ( typeof module !== 'undefined' && module.exports && typeof require === 'function' ) {
-		factory( require( 'ractive' ) );
+		factory( require( 'Ractive' ) );
 	}
 
 	// AMD?
