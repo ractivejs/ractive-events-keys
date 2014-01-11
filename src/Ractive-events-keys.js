@@ -66,7 +66,7 @@
 			node.addEventListener( 'keydown', keydownHandler = function ( event ) {
 				var which = event.which || event.keyCode;
 
-				if ( which === code ) {
+				if ( which === code && !event.shiftKey) {
 					event.preventDefault();
 
 					fire({
