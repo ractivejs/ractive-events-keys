@@ -61,9 +61,10 @@
 
 	var events, makeKeyDefinition = function ( code ) {
 		return function ( node, fire ) {
-			var keydownHandler;
 
-			node.addEventListener( 'keydown', keydownHandler = function ( event ) {
+			node.addEventListener( 'keydown', keydownHandler, false)
+			window.addEventListener( 'keydown', keydownHandler, false)
+			function keydownHandler( event ) {
 				var which = event.which || event.keyCode;
 
 				if ( which === code ) {
@@ -74,11 +75,12 @@
 						original: event
 					});
 				}
-			}, false );
+			}
 
 			return {
 				teardown: function () {
 					node.removeEventListener( 'keydown', keydownHandler, false );
+					window.removeEventListener( 'keydown', keydownHandler, false );
 				}
 			};
 		};
