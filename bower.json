@@ -2,7 +2,7 @@
 	"name": "ractive-events-keys",
 	"version": "0.1.0",
 	"author": "Rich Harris",
-	"main": "Ractive-events-keys.js",
+	"main": "ractive-events-keys.js",
 	"ignore": [
 		"**/.*",
 		"src",

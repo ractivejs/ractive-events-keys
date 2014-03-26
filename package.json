@@ -4,12 +4,10 @@
 	"author": {
 		"name": "Rich Harris"
 	},
-	"main": "Ractive-events-keys.js",
+	"main": "ractive-events-keys.js",
 	"description": "Key events plugin for Ractive.js",
-	"jam": {
-		"dependencies": {
-			"Ractive": ">= 0.3.8"
-		}
+	"dependencies": {
+		"ractive": ">= 0.3.9"
 	},
 	"devDependencies": {
 		"grunt": "~0.4.1",
