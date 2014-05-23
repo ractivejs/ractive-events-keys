@@ -3,7 +3,7 @@
 	ractive-events-keys
 	===================
 
-	Version <%= VERSION %>.
+	Version <%= pkg.version %>.
 
 	<< description goes here... >>
 
