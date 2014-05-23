@@ -1,12 +1,22 @@
 {
 	"name": "ractive-events-keys",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": "Rich Harris",
 	"main": "ractive-events-keys.js",
 	"ignore": [
 		"**/.*",
+		"*.json",
 		"src",
 		"test",
+		"demo",
+		"vendor",
+		"node_modules",
+		"tmp",
+		"index.html",
+		"LICENSE-MIT",
 		"Gruntfile.js"
-	]
+	],
+	"devDependencies": {
+		"ractive": "~0.4.0"
+	}
 }
