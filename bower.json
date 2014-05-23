@@ -6,15 +6,17 @@
 	"ignore": [
 		"**/.*",
 		"*.json",
+		"demo",
+		"grunt",
+		"node_modules",
 		"src",
 		"test",
-		"demo",
-		"vendor",
-		"node_modules",
 		"tmp",
+		"vendor",
 		"index.html",
 		"LICENSE-MIT",
-		"Gruntfile.js"
+		"Gruntfile.js",
+		"README.md"
 	],
 	"devDependencies": {
 		"ractive": "~0.4.0"
