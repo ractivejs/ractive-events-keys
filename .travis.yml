@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.10'
+before_script:
+- npm install -g grunt-cli; chmod u+x scripts/deploy-to-gh-pages.sh; grunt
+script: ./scripts/deploy-to-gh-pages.sh
+env:
+  global:
+  - GH_REF: github.com/ractivejs/ractive-events-keys.git
+  - secure: RwkzIPCpmvi+Bjs448jM64BsvyAhd9Ddjgv9pOZlCwZnrgTX6bpFKSslgudONLtPpSjFuLi1Y0r5MH0lVbAjNq1cKYH9ox/A3J78CkVmPYt8QYNM9Jq4dOsgcwagD0Gb6EbrJlgw7rUDjjyDXvAdwRl0wPVry/aCMRg4H988FWU=
+branches:
+  only:
+    - master
