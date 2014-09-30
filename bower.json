@@ -1,6 +1,6 @@
 {
 	"name": "ractive-events-keys",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "Rich Harris",
 	"main": "ractive-events-keys.js",
 	"ignore": [
@@ -19,6 +19,6 @@
 		"README.md"
 	],
 	"devDependencies": {
-		"ractive": "~0.4.0"
+		"ractive": "^0.5.8"
 	}
 }

@@ -2,10 +2,10 @@
 	"name": "ractive-events-keys",
 	"repo": "ractivejs/ractive-events-keys",
 	"description": "ractive-events-keys",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"keywords": [],
 	"dependencies": {
-		"ractivejs/ractive": ">= 0.3.9"
+		"ractivejs/ractive": "^0.5.8"
 	},
 	"development": {},
 	"license": "MIT",
