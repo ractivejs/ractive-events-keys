@@ -7,7 +7,6 @@
 	"main": "ractive-events-keys.js",
 	"description": "Key events plugin for Ractive.js",
 	"dependencies": {
-		"ractive": "^0.5.8"
 	},
 	"devDependencies": {
 		"grunt": "~0.4.1",
