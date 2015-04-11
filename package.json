@@ -11,7 +11,8 @@
     "gobble": "^0.7.14",
     "gobble-babel": "^5.0.0",
     "gobble-cli": "^0.3.5",
-    "gobble-esperanto-bundle": "^0.1.7"
+    "gobble-esperanto-bundle": "^0.1.7",
+    "gobble-uglifyjs": "^0.2.1"
   },
   "scripts": {
     "build": "rm -rf dist; gobble build dist",
