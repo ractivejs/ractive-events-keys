@@ -1,6 +1,6 @@
 {
   "name": "ractive-events-keys",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Rich Harris",
   "license": "MIT",
   "repository": "https://github.com/ractivejs/ractive-events-keys",
@@ -17,5 +17,10 @@
   "scripts": {
     "build": "rm -rf dist; gobble build dist",
     "prepublish": "npm run build"
-  }
+  },
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ]
 }
