@@ -1,20 +1,20 @@
 {
-	"name": "ractive-events-keys",
-	"version": "0.1.2",
-	"author": {
-		"name": "Rich Harris"
-	},
-	"main": "ractive-events-keys.js",
-	"description": "Key events plugin for Ractive.js",
-	"dependencies": {
-		"ractive": "^0.5.8"
-	},
-	"devDependencies": {
-		"grunt": "~0.4.1",
-		"grunt-contrib-concat": "~0.3.0",
-		"grunt-contrib-qunit": "~0.3.0",
-		"grunt-contrib-uglify": "~0.2.5",
-		"grunt-contrib-jshint": "~0.7.0",
-		"grunt-contrib-copy": "~0.4.1"
-	}
+  "name": "ractive-events-keys",
+  "version": "0.2.0",
+  "author": "Rich Harris",
+  "license": "MIT",
+  "repository": "https://github.com/ractivejs/ractive-events-keys",
+  "main": "./dist/ractive-events-keys.js",
+  "jsnext:main": "./src/ractive-events-keys.js",
+  "description": "Key events plugin for Ractive.js",
+  "devDependencies": {
+    "gobble": "^0.7.14",
+    "gobble-babel": "^5.0.0",
+    "gobble-cli": "^0.3.5",
+    "gobble-esperanto-bundle": "^0.1.7"
+  },
+  "scripts": {
+    "build": "rm -rf dist; gobble build dist",
+    "prepublish": "npm run build"
+  }
 }
