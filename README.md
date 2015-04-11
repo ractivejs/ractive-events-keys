@@ -1,34 +1,103 @@
-Ractive.js keys event plugin
-============================
+# ractive-events-keys
 
-*Find more Ractive.js plugins at [ractivejs.org/plugins](http://ractivejs.org/plugins)*
+*Find more Ractive.js plugins at [ractivejs.org](http://docs.ractivejs.org/latest/plugins)*
 
-[See the demo here.](http://ractivejs.github.io/ractive-events-keys/)
-
-Usage
------
-
-Include this file on your page below Ractive, e.g:
+Listen for specific keypresses - `enter`, `tab`, `escape`, `space`, `leftarrow`, `uparrow`, `rightarrow`, `downarrow` - on DOM elements.
 
 ```html
-<script src='lib/ractive.js'></script>
-<script src='lib/ractive-events-keys.js'></script>
+<input on-tab='submitAndMoveOn()' on-escape='revertEdit()'>
 ```
 
-Or, if you're using a module loader, require this module:
+
+## Installation
+
+Install from npm...
+
+```bash
+npm install ractive-events-keys
+```
+
+...or download it and add it as a script tag to your page:
+
+```html
+<script src='ractive.js'></script> <!-- must go first! -->
+<script src='ractive-events-keys.js'></script>
+```
+
+
+## Use as a module...
+
+**Note: previous versions of this plugin would 'self-register'. If you are using a module system such as Browserify, Webpack or RequireJS, that's no longer the case - you must explicitly register the plugin.**
+
+
+### CommonJS
 
 ```js
-// requiring the plugin will 'activate' it - no need to use the return value
-require( 'ractive-events-keys' );
+var Ractive = require( 'ractive' );
+var keys = require( 'ractive-events-keys' );
+
+// To use the plugin with a specific instance
+var ractive = new Ractive({
+  el: 'body',
+  template: myTemplate,
+  events: {
+    // just include the ones you need
+    escape: keys.escape,
+    scape: keys.space
+  }
+});
+
+// To use it with components
+MyComponent = Ractive.extend({
+  template: componentTemplate,
+  events: {
+    escape: keys.escape,
+    scape: keys.space
+  }
+});
+
+// To make handlers globally available to *all* instances
+Ractive.events.space = keys.space;
+Ractive.events.escape = keys.escape;
 ```
 
-**plugin-specific instructions to go here...**
+
+### AMD
+
+```js
+define([ 'ractive', 'ractive-events-keys' ], function ( Ractive, keys ) {
+  var ractive = new Ractive({
+    el: 'body',
+    template: myTemplate,
+    events: {
+      escape: keys.escape,
+      scape: keys.space
+    }
+  });
+});
+```
+
+
+### ES6
+
+```js
+import Ractive from 'ractive';
+import { escape, space } from 'ractive-events-keys';
+
+var ractive = new Ractive({
+  el: 'body',
+  template: myTemplate,
+  events: { escape, space }
+});
+```
+
+
+## Use as a `<script>` tag
+
+If you include ractive-events-keys as a script tag, it will 'self-register' with the global `Ractive` object, and all Ractive instances will be able to use its handlers.
 
 
 
-License
--------
+## License
 
-Copyright (c) 2013 Rich Harris. Licensed MIT
-
-Created with the [Ractive.js plugin template](https://github.com/ractivejs/plugin-template) for Grunt.
+MIT
