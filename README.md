@@ -52,7 +52,7 @@ MyComponent = Ractive.extend({
   template: componentTemplate,
   events: {
     escape: keys.escape,
-    scape: keys.space
+    space: keys.space
   }
 });
 
