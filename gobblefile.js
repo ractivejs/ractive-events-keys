@@ -14,10 +14,8 @@ var lib = gobble( 'src' )
 		sourceMap: false,
 		strict: true
 	})
-	.transform( function ( input ) {
-		// this is an egregious hack, and totally brittle. YOLO
-		return input.replace( '(global.__PLACEHOLDER__ = {})', 'global.Ractive.events' );
-	});
+	.transform( input => // this is an egregious hack, and totally brittle. YOLO
+input.replace('(global.__PLACEHOLDER__ = {})', 'global.Ractive.events'));
 
 module.exports = gobble([
 	lib,
