@@ -11,7 +11,14 @@ Listen for specific keypresses - `enter`, `tab`, `escape`, `space`, `leftarrow`,
 
 ## Installation
 
-Install from npm...
+Include it from CDN...
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/ractive@0.9.3/ractive.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ractive-events-keys@0.2.1/dist/ractive-events-keys.min.js"></script>
+```
+
+...or install from npm...
 
 ```bash
 npm install ractive-events-keys
