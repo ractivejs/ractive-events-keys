@@ -1,5 +1,5 @@
 // TODO can we just declare the keydowhHandler once? using `this`?
-function makeKeyDefinition ( code ) {
+export function makeKeyDefinition ( code ) {
 	return ( node, fire ) => {
 		function keydownHandler ( event ) {
 			var which = event.which || event.keyCode;
